@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import "./css/Internship.css";
 import { Link } from "react-router-dom";
+import Software_Development from "../assets/internships/mobile.jpg";
 const Internship = () => {
   const internships = [
     {
@@ -10,7 +11,7 @@ const Internship = () => {
       description:
         "Work on real-world projects with mentorship from industry experts.",
       image:
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+        "{Software_Development}",
     },
     {
       id: 2,
