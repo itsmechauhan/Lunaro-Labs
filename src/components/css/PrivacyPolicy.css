@@ -1,0 +1,49 @@
+﻿.privacy-page {
+  background: #0d1117; /* Dark background */
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.privacy-container {
+  background: #161b22; /* Slightly lighter dark card */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  max-width: 900px;
+  width: 100%;
+  line-height: 1.7;
+  color: #c9d1d9; /* Light text */
+  text-align: left; /* ✅ Force left alignment */
+}
+
+.privacy-container h1 {
+  color: #58a6ff; /* Accent Blue */
+  margin-bottom: 10px;
+}
+
+.privacy-container .last-updated {
+  font-size: 14px;
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+.privacy-container h2 {
+  margin-top: 25px;
+  color: #f0f6fc; /* Bright white for headings */
+  font-size: 20px;
+  border-left: 4px solid #58a6ff;
+  padding-left: 10px;
+}
+
+.privacy-container p {
+  margin: 10px 0;
+  color: #c9d1d9; /* Light text */
+}
+
+.privacy-container ul {
+  margin: 10px 20px;
+  list-style-type: disc;
+  color: #c9d1d9;
+}

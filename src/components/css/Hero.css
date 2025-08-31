@@ -1,0 +1,63 @@
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #9a6bff;
+}
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.hero-desc {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;   /* underline hata dega */
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn.primary {
+  background: linear-gradient(90deg, #6a5acd, #9a6bff);
+  color: white;
+}
+.btn.secondary {
+  background: #111;
+  border: 1px solid white;
+  color: white;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.hero-subtitle {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #cfcfcf;
+  min-height: 3rem; /* keeps space reserved while typing */
+}
+
+.hero-subtitle span {
+  color: #9a6bff; /* highlight typing text */
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 2.5rem; /* added bottom spacing */
+  color: #e0e0e0;
+}

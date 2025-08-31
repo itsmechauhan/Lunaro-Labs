@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #0f0f1a, #1a1a2e);
+  color: white;
+}
+.App {
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}

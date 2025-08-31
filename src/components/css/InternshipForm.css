@@ -1,0 +1,76 @@
+.internship-form-section {
+  background: #111;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  margin: 40px auto;
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing animated border */
+.internship-form-section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 14px;
+  background: linear-gradient(270deg, #00d4ff, #ff0080, #ffae00, #00d4ff);
+  background-size: 600% 600%;
+  z-index: -1;
+  animation: glowingBorder 8s linear infinite;
+}
+
+@keyframes glowingBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #00d4ff, #ff0080, #ffae00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s linear infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.form-subtitle {
+  color: #bbb;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form-tagline {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #00d4ff;
+  font-style: italic;
+}

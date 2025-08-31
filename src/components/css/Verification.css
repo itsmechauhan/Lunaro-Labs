@@ -1,0 +1,121 @@
+﻿.verification-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.verification-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  background: linear-gradient(90deg, #9a6bff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  animation: glowText 3s infinite alternate;
+}
+
+.verification-article p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ff758c;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-left: 5px solid #9a6bff;
+  padding-left: 10px;
+  animation: fadeInUp 1s ease;
+}
+
+.verification-steps,
+.guidelines {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.verification-steps li,
+.guidelines li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 1.8rem;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.verification-steps li:nth-child(1) { animation-delay: 0.3s; }
+.verification-steps li:nth-child(2) { animation-delay: 0.6s; }
+.verification-steps li:nth-child(3) { animation-delay: 0.9s; }
+.verification-steps li:nth-child(4) { animation-delay: 1.2s; }
+
+.guidelines li:nth-child(1) { animation-delay: 1.5s; }
+.guidelines li:nth-child(2) { animation-delay: 1.8s; }
+.guidelines li:nth-child(3) { animation-delay: 2.1s; }
+.guidelines li:nth-child(4) { animation-delay: 2.4s; }
+.guidelines li:nth-child(5) { animation-delay: 2.7s; }
+
+.verification-steps li::before,
+.guidelines li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.note {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowText {
+  from { text-shadow: 0 0 10px #9a6bff, 0 0 20px #00d4ff; }
+  to { text-shadow: 0 0 25px #9a6bff, 0 0 40px #00d4ff; }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 5px #00d4ff; }
+  50% { box-shadow: 0 0 20px #9a6bff; }
+  100% { box-shadow: 0 0 5px #00d4ff; }
+}

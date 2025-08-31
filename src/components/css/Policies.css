@@ -1,0 +1,118 @@
+/* Main policies page layout */
+.policies-page {
+  background: #0d0d0d; /* dark background */
+  color: #e6e6e6;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.policies-container {
+  max-width: 1000px;
+  width: 100%;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  line-height: 1.7;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Headings */
+.policies-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #9a6bff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.policies-container h2 {
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #ffd369;
+  border-left: 4px solid #9a6bff;
+  padding-left: 12px;
+}
+
+/* Paragraphs */
+.policies-container p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  color: #dcdcdc;
+  text-align: justify;
+}
+
+/* Highlighted text */
+.policies-container .highlight {
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+/* Lists */
+.policies-container ul,
+.policies-container ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.policies-container ul li,
+.policies-container ol li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.policies-container ul li::marker,
+.policies-container ol li::marker {
+  color: #9a6bff;
+  font-weight: bold;
+}
+
+/* Articles separation */
+.policies-container article {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.policies-container article:last-child {
+  border-bottom: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .policies-container {
+    padding: 20px;
+  }
+
+  .policies-container h1 {
+    font-size: 2rem;
+  }
+
+  .policies-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .policies-container p,
+  .policies-container li {
+    font-size: 0.95rem;
+  }
+}
