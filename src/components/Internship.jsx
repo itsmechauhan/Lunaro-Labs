@@ -2,7 +2,13 @@
 import { motion } from "framer-motion";
 import "./css/Internship.css";
 import { Link } from "react-router-dom";
-import Software_Development from "../assets/internships/mobile.jpg";
+import Software_Development from "../assets/mobile.png";
+import Data_Science from "../assets/data-science.png";
+import AI from "../assets/ai.png";
+import Machine_Learning from "../assets/ml.png";
+import HR from "../assets/hr.png";
+import luna from "../assets/luna.png";
+
 const Internship = () => {
   const internships = [
     {
@@ -27,7 +33,7 @@ const Internship = () => {
       description:
         "Dive into big data, analytics, and machine learning solutions.",
       image:
-        "https://images.unsplash.com/photo-1581090469693-7eec264c27a9?auto=format&fit=crop&w=600&q=80",
+        "{luna}",
     },
     {
       id: 4,
