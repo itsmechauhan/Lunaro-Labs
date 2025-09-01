@@ -47,6 +47,9 @@ function App() {
            <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
            <Route path="/terms" element={<TermsAndConditions />} />
            <Route path="/apply" element={<InternshipForm />} />
+           <Route path="/shipping" element={<TermsAndConditions />} />
+            <Route path="/CancellationAndRefunds" element={<TermsAndConditions />} />
+
         </Routes>
 
         <Footer />

@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 import "./css/Internship.css";
 import { Link } from "react-router-dom";
 import Software_Development from "../assets/mobile.png";
-import Data_Science from "../assets/data-science.png";
+import Data_Science from "../assets/data_science.jpg";
 import AI from "../assets/ai.png";
 import Machine_Learning from "../assets/ml.png";
-import HR from "../assets/hr.png";
 import luna from "../assets/luna.png";
 
 const Internship = () => {
