@@ -48,7 +48,7 @@ const Internship = () => {
       description:
         "Build responsive and modern websites using latest frameworks.",
       image:
-        "https://images.unsplash.com/photo-1502880195258-4b3e1b1d8d6d?auto=format&fit=crop&w=600&q=80",
+        "ml",
     },
     {
       id: 6,
