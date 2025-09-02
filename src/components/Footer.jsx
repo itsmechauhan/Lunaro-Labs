@@ -100,7 +100,7 @@ const Footer = () => {
         <div>
           <h3 className="footer-heading">Contact</h3>
           <p><MdLocationOn /> Bangalore, Karnataka</p>
-          <p><MdEmail /> contact@futureinterns.com</p>
+          <p><MdEmail /> lanurolabs@gmail.com</p>
           </div>
       </div>
 
