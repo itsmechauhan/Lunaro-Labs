@@ -48,6 +48,7 @@ function App() {
            <Route path="/terms" element={<TermsAndConditions />} />
            <Route path="/apply" element={<InternshipForm />} />
            <Route path="/shipping" element={<TermsAndConditions />} />
+              <Route path="/refund" element={<TermsAndConditions />} />
             <Route path="/CancellationAndRefunds" element={<TermsAndConditions />} />
 
         </Routes>
